@@ -1,0 +1,6 @@
+skills <- c("Computer Programming", "Math", "Statistics", "Machine Learning", "domain expertise", "communication & presentation", "data visualization")
+level <- c(4, 2, 3, 2, 4, 3, 3)
+shravan <- data.frame(skills, level)
+op <- par(mar=c(11,4,4,2))
+barplot(shravan$level, names=shravan$skills, ylab = "level 1-5", ylim=c(0,5), main="DataScience Profile", cex.names=.75, las=2, col="blue")
+rm(op)
